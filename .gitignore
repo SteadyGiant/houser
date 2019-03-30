@@ -2,7 +2,6 @@
 .RData
 .Rproj.user
 .Rapp.history
-.Rproj.user/
 
 # Example code in package build process
 *-Ex.R
