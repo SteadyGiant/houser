@@ -72,7 +72,7 @@ geography-format-year.
 The name of the BPS file tells you everything you need to know about it.
 They all follow the following template:
 
-> <geography or region><YYMM or YYYY><format>.txt
+> \<geography or region\>\<YYMM or YYYY\>\<format\>.txt
 
 The state-level annual file for 2017 is called `st2017a.txt`. The
 county-level current month file for January 2016 is called
