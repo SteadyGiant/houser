@@ -1,0 +1,27 @@
+Package: houser
+Type: Package
+Title: Tools to download, read, and clean housing data from the US Census Bureau
+Version: 0.1.0.9000
+Date: 2019-03-30
+Authors@R: c(
+    person("Everet", "Rummel", email = "everet.rummel@gmail.com", 
+           role = c("aut", "cre"))
+  )
+Maintainer: Everet Rummel <everet.rummel@gmail.com>
+Description: The US Census Bureau conducts quite a few surveys of buildings and
+    housing in the US (see <https://www.census.gov/econ/construction.html>).
+    None of this data is available in the official Census API
+    (<https://www.census.gov/data/developers/data-sets.html>). This package 
+    provides a convenient way to access housing data from the US Census.
+URL: https://github.com/everetr/houser
+BugReports: https://github.com/everetr/houser/issues
+Encoding: UTF-8
+License: GPL-3 | file LICENSE.md
+Imports:
+    magrittr,
+    readr
+Depends:
+    R (>= 3.5.0)
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Remotes: everetr/houser
