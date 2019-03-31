@@ -53,12 +53,12 @@ geography-format-year.
 #### Formats
 
   - Monthly - “YYMM”
-  - Current month - “c”
-  - Year-to-date - “y”
-  - Monthly cumulative - “r”
+      - Current month - “c”
+      - Year-to-date - “y”
+      - Monthly cumulative - “r”
   - Annual - “YYYY”
-  - Annual summary - “a”
-  - Annual revised - “r”
+      - Annual summary - “a”
+      - Annual revised - “r”
 
 #### Regions
 
@@ -105,6 +105,25 @@ being tested and therefore not recommended.
   - `bps_read()` - Load BPS data. Option to repair column names.
   - `bps_doc()` - Open BPS documentation for a specified geography in
     your system’s default PDF viewer.
+
+## Usage
+
+``` r
+library(houser)
+
+# Download annual data for one geography, two years.
+bps_get(path = ".", geography = "state", years = c(2010, 2017))
+
+# Downloading place data requires a `region` argument.
+bps_get(path = ".", geography = "place", region = "ne", years = 2016:2017)
+
+# If the `return_log_df` argument is TRUE, bps_get will download the data in 
+# the background, as usual, AND return a data frame containing metadata for all
+# files that were downloaded.
+bps_log = bps_get(path = ".", 
+                  geography = "place", region = "ne", years = 2016:2017,
+                  return_log_df = T)
+```
 
 ## Contributor Code of Conduct
 
