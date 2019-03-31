@@ -31,24 +31,24 @@ directory](https://www2.census.gov/econ/bps/). See the [BPS
 documentation](https://www2.census.gov/econ/bps/Documentation/) for all
 the info you’ll ever need. The following is an attempt at a summary.
 
-This table gives you a lay of the
-land:
-
-| Geography |                           Formats |        Regions |     Years |
-| --------: | --------------------------------: | -------------: | --------: |
-|     State |                           c, y, a |            N/A | 1980-2017 |
-|    County |                           c, y, a |            N/A | 1980-2017 |
-|       MSA |                           c, y, a |            N/A | 1980-2017 |
-|     Place | monthly: c, y, r;<br>annual: a, r | mw, ne, so, we | 1980-2017 |
-
 BPS data are just a bunch of csv files, available for 4 geographies.
 Geography is the unit of observation in all BPS files. For each
 geography, files come in 5 possible formats for every year since 1980
 (see “Formats” below), though not all formats are available for all
 geographies. Place (municipality)-level files are organized by the
 region of the US in which their places are located (see “Regions”
-below); there are 4 regions, so there are 4 place files for each
-geography-format-year.
+below).
+
+These tables give you a lay of the land:
+
+| Geography |                           Formats |        Regions |
+| --------: | --------------------------------: | -------------: |
+|     State |                           c, y, a |            N/A |
+|    County |                           c, y, a |            N/A |
+|       MSA |                           c, y, a |            N/A |
+|     Place | monthly: c, y, r;<br>annual: a, r | mw, ne, so, we |
+
+<img src="./inst/images/bps_years_available.png" width="100%" />
 
 #### Formats
 
@@ -83,6 +83,19 @@ Place files are special. The place-level monthly cumulative file for
 February 1993 for the Northeast region is called `ne9302r.txt`. The
 place-level annual summary file for 1990 for the West region is called
 `we1990a.txt`.
+
+### Data Documentation
+
+#### Building Permits Survey
+
+  - [All](https://www.census.gov/construction/bps/sample.html)
+      - [Customer Information
+        Package](https://www.census.gov/construction/bps/sample/customerinformationpackage2016withinstructions.pdf)
+      - Dictionaries for each geography file
+      - [Imputation
+        procedure](https://www.census.gov/construction/bps/sample/impute.pdf)
+  - See also: [HUD Building Permits Database help
+    page](https://socds.huduser.gov/permits/help.htm)
 
 ## Installation
 
