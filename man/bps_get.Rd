@@ -4,23 +4,26 @@
 \alias{bps_get}
 \title{bps_get}
 \usage{
-bps_get(path, formats = "a", regions = "all", years = NULL,
-  months = NULL, return_log_df = F)
+bps_get(path, geography = "state", formats = "a", years = NULL,
+  months = NULL, regions = NULL, return_log_df = F)
 }
 \arguments{
 \item{path}{Character, length 1. Path to directory where data will download.}
+
+\item{geography}{Character, length 1. Geography (unit of observation) of data
+to download. One of "state", "county", "msa", or "place".}
 
 \item{formats}{Character. Format of data to download. Can be any combo or all
 of "a", "c", "y", or "r". Use \code{\link{bps_doc}} to get more info from
 the BPS documentation.}
 
-\item{regions}{Character. Can be any combo or all of "mw", "ne", "so", and
-"we" (Midwest, Northeast, South, West), or "all".}
-
 \item{years}{Numeric. One or more years for which to download data.}
 
-\item{months}{Character. One or more months for which to download data.
-If NULL, all available months will be downloaded.}
+\item{months}{Character. DO NOT USE right now. One or more months for which
+to download data. If NULL, all available months will be downloaded.}
+
+\item{regions}{Character. Can be any combo or all of "mw", "ne", "so", and
+"we", or "all".}
 
 \item{return_log_df}{Logical, length 1.}
 }
