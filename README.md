@@ -6,7 +6,7 @@
 The US Census Bureau conducts [quite a
 few](https://www.census.gov/econ/construction.html) surveys of buildings
 and housing in the US. None of this data is available in the [official
-Census API](https://www.census.gov/data/developers/data-sets.html) This
+Census API](https://www.census.gov/data/developers/data-sets.html). This
 package provides a convenient way to access housing data from the US
 Census.
 
